@@ -28,6 +28,8 @@ const displayCategoriesData = categories => {
 // load meals by search
 const loadMealBySearch = () => {
     const search = document.getElementById('search-field')
+    const spinner = document.getElementById('spinner')
+    spinner.style.display = 'block'
     const error = document.getElementById('error')
     // meal container 
     const mealContainer = document.getElementById('meal-container')
@@ -50,6 +52,8 @@ const displayMealsBySearch = meals => {
     // meal container 
     const mealContainer = document.getElementById('meal-container')
     mealContainer.innerHTML = ''
+    const spinner = document.getElementById('spinner')
+    spinner.style.display = 'none'
     console.log(meals)
     meals.forEach(meal => {
         const div = document.createElement('div')

@@ -17,6 +17,9 @@
             margin-bottom: 15px;
             display: none;
         }
+        #spinner{
+            display: none;
+        }
     </style>
 </head>
 <body style="background-color: rgb(241, 236, 236);">
@@ -30,6 +33,14 @@
     </section>
     <!-- error handling -->
     <p class="text-center text-danger fs-3" id="error"></p>
+    <!-- spinner added  -->
+    <div id="spinner">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
     <!-- single meal details  -->
     <div class="meal-detail" id="meal-wrap"></div>
     <!-- search meal details  -->
